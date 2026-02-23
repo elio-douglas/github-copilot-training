@@ -10,6 +10,19 @@ Remember, it's self-paced so feel free to take a break! ☕️
 
 [![](https://img.shields.io/badge/Go%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/elio-douglas/github-copilot-training/issues/1)
 
+## Backend Testing
+
+Run backend tests from the repository root:
+
+```bash
+pytest -q
+```
+
+Current backend API tests (AAA pattern) are in `tests/test_activities_api.py` and cover:
+
+- `POST /activities/{activity_name}/signup` (success, duplicate signup, full activity, unknown activity)
+- `DELETE /activities/{activity_name}/participants` (success, unknown activity, participant not found)
+
 ---
 
 &copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
